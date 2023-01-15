@@ -17,9 +17,11 @@ void GetFillArrayFromUser(int[] collection)
             Console.Write($"Введите {i}-й элемент массива: ");
             bool isCorrect = int.TryParse(Console.ReadLine(), out int num);
             if (isCorrect)
+                {
                 collection[i] = num;
+                break;
+                }
             else Console.WriteLine("Ошибка ввода!");
-            break;
         }
     }
 }

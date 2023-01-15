@@ -3,11 +3,11 @@
 
 int[] array = new int[8];
 
-GetFillArrayFromUser(array);
-GetPrintArrayFromUser(array);
+FillArray(array);
+PrintArray(array);
 
 //Функции, используемые в программе
-void GetFillArrayFromUser(int[] collection)
+void FillArray(int[] collection)
 {
     int lengthArray = collection.Length;
     for (int i = 0; i < lengthArray; i++)
@@ -26,7 +26,7 @@ void GetFillArrayFromUser(int[] collection)
     }
 }
 
-void GetPrintArrayFromUser(int [] printArray)
+void PrintArray(int [] printArray)
 {
     int lengthArray = printArray.Length;
     Console.Write("[");
